@@ -6,6 +6,6 @@ run git clone https://github.com/Reabaln/level2-project.git && \
 
 from adoptopenjdk/openjdk11:alpine
 
-copy --from=build /root/level1-project/person-service/target/person-service-1.0.0.jar /
+copy --from=build /root/level2-project/person-service/target/person-service-1.0.0.jar /
 
 cmd ["java", "-jar", "person-service-1.0.0.jar"]
