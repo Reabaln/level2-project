@@ -3,17 +3,17 @@ kind: Deployment
 metadata:
   name: office-service
   labels:
-    app: office-service
+    app: office
     type: api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: office-service
+      app: office
   template:
     metadata:
       labels:
-        app: office-service
+        app: office
     spec:
       containers:
       - name: office-service

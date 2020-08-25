@@ -3,17 +3,17 @@ kind: Deployment
 metadata:
   name: person-service
   labels:
-    app: person-service
+    app: person
     type: api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: person-service
+      app: person
   template:
     metadata:
       labels:
-        app: person-service
+        app: person
     spec:
       containers:
       - name: person-service

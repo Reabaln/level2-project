@@ -3,17 +3,17 @@ kind: Deployment
 metadata:
   name: role-service
   labels:
-    app: role-service
+    app: role
     type: api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: role-service
+      app: role
   template:
     metadata:
       labels:
-        app: role-service
+        app: role
     spec:
       containers:
       - name: role-service

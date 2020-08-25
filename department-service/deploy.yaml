@@ -3,17 +3,17 @@ kind: Deployment
 metadata:
   name: department-service
   labels:
-    app: department-service
+    app: department
     type: api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: department-service
+      app: department
   template:
     metadata:
       labels:
-        app: department-service
+        app: department
     spec:
       containers:
       - name: department-service
