@@ -3,17 +3,17 @@ kind: Deployment
 metadata:
   name: project-assessment-site
   labels:
-    app: home
+    app: project-assessment-site
     type: api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: home
+      app: project-assessment-site
   template:
     metadata:
       labels:
-        app: home
+        app: project-assessment-site
     spec:
       containers:
       - name: project-assessment-site
